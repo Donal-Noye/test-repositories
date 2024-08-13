@@ -1,1 +1,1 @@
-export { default } from './RepositoryDetails.tsx';
+export { default } from "./RepositoryDetails.tsx";

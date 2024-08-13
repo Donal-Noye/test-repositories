@@ -1,6 +1,6 @@
 import React from "react";
 import { Chip } from "@mui/material";
-import star from '../../assets/icon/star.svg'
+import star from "../../assets/icon/star.svg";
 import styles from "./RepositoryDetails.module.scss";
 
 interface RepositoryDetailsProps {
@@ -18,8 +18,8 @@ const RepositoryDetails: React.FC<RepositoryDetailsProps> = ({
   starsCount,
   license,
 }) => {
-	// Если имя репозитория не задано, показываем сообщение
-	if (!name) {
+  // Если имя репозитория не задано, показываем сообщение
+  if (!name) {
     return (
       <div className={`${styles.detailsContainer} ${styles.detailsText}`}>
         <p>Выберите репозиторий</p>
@@ -32,22 +32,22 @@ const RepositoryDetails: React.FC<RepositoryDetailsProps> = ({
       <h2 className={styles.detailsName}>{name}</h2>
       {languages && languages.length > 0 && (
         <div className={styles.content}>
-	        <div className={styles.languages}>
-		        <Chip
-			        label={language}
-			        color="primary"
-			        sx={{ backgroundColor: "#2196F3" }}
-		        />
-		        <div className={styles.tags}>
-			        {languages.map((language) => (
-				        <Chip key={language} label={language} />
-			        ))}
-		        </div>
-	        </div>
-	        <div className={styles.starsCount}>
-		        <img src={star} alt=""/>
-		        <p>{starsCount}</p>
-	        </div>
+          <div className={styles.languages}>
+            <Chip
+              label={language}
+              color="primary"
+              sx={{ backgroundColor: "#2196F3" }}
+            />
+            <div className={styles.tags}>
+              {languages.map((language) => (
+                <Chip key={language} label={language} />
+              ))}
+            </div>
+          </div>
+          <div className={styles.starsCount}>
+            <img src={star} alt="" />
+            <p>{starsCount}</p>
+          </div>
         </div>
       )}
       <p>{license}</p>
