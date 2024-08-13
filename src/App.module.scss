@@ -1,0 +1,19 @@
+@import 'vars.scss';
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 16px;
+
+  height: calc(100vh - ($searchBar-height + $footer-height));
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: $footer-height;
+  background-color: #4f4f4f;
+}

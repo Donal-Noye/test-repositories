@@ -1,0 +1,51 @@
+.detailsContainer {
+  padding: 24px;
+  width: 480px;
+  background-color: #F2F2F2;
+}
+
+.detailsText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 14px;
+    letter-spacing: 0.17px;
+    text-align: center;
+    color: #4f4f4f;
+  }
+}
+
+.detailsName {
+  font-size: 32px;
+  margin: 0 0 16px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  text-transform: capitalize;
+  margin-top: 16px;
+}
+
+.tag {
+  background-color: #2196F3;
+}
+
+.starsCount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  p {
+    font-size: 14px;
+  }
+}

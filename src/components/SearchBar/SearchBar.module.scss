@@ -1,0 +1,16 @@
+@import '../../vars.scss';
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  padding: 19px 32px;
+  gap: 16px;
+
+  height: $searchBar-height;
+
+  background-color: #00838f;
+}
+
+.input {
+  background-color: #f2f2f2;
+}
